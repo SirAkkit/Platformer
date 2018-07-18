@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Profile>Reach</Profile>
+  <Platform>Windows</Platform>
+  <Config />
+  <SourceFiles>
+    <File>C:/Users/User/Desktop/OneDrive/School/AIE/Projects/Games/Platformer/Platformer/Content/player_stand.png</File>
+    <File>C:/Users/User/Desktop/OneDrive/School/AIE/Projects/Games/Platformer/Platformer/Content/Candara.spritefont</File>
+  </SourceFiles>
+</SourceFileCollection>
