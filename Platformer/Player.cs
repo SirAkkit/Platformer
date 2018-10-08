@@ -25,11 +25,11 @@ namespace Platformer
             sprite.Load(content, "player_stand");
         }
 
-        public void Update(float deltaTime)
+        public void Update(float deltaTime) 
         {
             sprite.Update(deltaTime);
             KeyboardState State = Keyboard.GetState();
-            int speed = 50;
+            int speed = 100;
             if(State.IsKeyDown(Keys.Up) == true)
             {
                 Position.Y -= speed * deltaTime;

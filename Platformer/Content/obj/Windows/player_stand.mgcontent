@@ -3,11 +3,11 @@
   <SourceFile>C:/Users/User/Desktop/OneDrive/School/AIE/Projects/Games/Platformer/Platformer/Content/player_stand.png</SourceFile>
   <SourceTime>2018-07-09T14:33:39+09:30</SourceTime>
   <DestFile>C:/Users/User/Desktop/OneDrive/School/AIE/Projects/Games/Platformer/Platformer/Content/bin/Windows/player_stand.xnb</DestFile>
-  <DestTime>2018-10-03T09:17:57.9848273+09:30</DestTime>
+  <DestTime>2018-10-08T16:30:42.4871921+10:30</DestTime>
   <Importer>TextureImporter</Importer>
-  <ImporterTime>2017-03-02T01:35:36+10:30</ImporterTime>
+  <ImporterTime>2018-09-24T07:25:52+09:30</ImporterTime>
   <Processor>TextureProcessor</Processor>
-  <ProcessorTime>2017-03-02T01:35:36+10:30</ProcessorTime>
+  <ProcessorTime>2018-09-24T07:25:52+09:30</ProcessorTime>
   <Parameters>
     <Key>ColorKeyColor</Key>
     <Value>255,0,255,255</Value>
