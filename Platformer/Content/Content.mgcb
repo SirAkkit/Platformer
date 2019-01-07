@@ -14,6 +14,18 @@
 
 #---------------------------------- Content ---------------------------------#
 
+#begin Fantasy Tileset.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Fantasy Tileset.png
+
 #begin player_stand.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -26,7 +38,12 @@
 /processorParam:TextureFormat=Color
 /build:player_stand.png
 
-#begin tiles_spritesheet.png
+#begin samp1.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:samp1.tmx
+
+#begin Tileset.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -36,5 +53,5 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tiles_spritesheet.png
+/build:Tileset.png
 

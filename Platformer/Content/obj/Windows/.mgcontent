@@ -4,10 +4,14 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/User/Desktop/OneDrive/School/AIE/Projects/Games/Platformer/Platformer/Content/player_stand.png</File>
-    <File>C:/Users/User/Desktop/OneDrive/School/AIE/Projects/Games/Platformer/Platformer/Content/tiles_spritesheet.png</File>
+    <File>C:/Users/theak/OneDrive/School/AIE/Projects/Games/Platformer/Platformer/Content/Fantasy Tileset.png</File>
+    <File>C:/Users/theak/OneDrive/School/AIE/Projects/Games/Platformer/Platformer/Content/player_stand.png</File>
+    <File>C:/Users/theak/OneDrive/School/AIE/Projects/Games/Platformer/Platformer/Content/samp1.tmx</File>
+    <File>C:/Users/theak/OneDrive/School/AIE/Projects/Games/Platformer/Platformer/Content/Tileset.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
   </DestFiles>
