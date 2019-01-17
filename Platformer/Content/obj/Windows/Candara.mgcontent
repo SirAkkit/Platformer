@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SourceFile>C:/Users/theak/OneDrive/School/AIE/Projects/Games/Platformer/Platformer/Content/Candara.spritefont</SourceFile>
+  <SourceTime>2018-02-25T20:10:59+10:30</SourceTime>
+  <DestFile>C:/Users/theak/OneDrive/School/AIE/Projects/Games/Platformer/Platformer/Content/bin/Windows/Candara.xnb</DestFile>
+  <DestTime>2019-01-12T09:46:41.0477313+10:30</DestTime>
+  <Importer>FontDescriptionImporter</Importer>
+  <ImporterTime>2018-12-09T03:05:54+10:30</ImporterTime>
+  <Processor>FontDescriptionProcessor</Processor>
+  <ProcessorTime>2018-12-09T03:05:54+10:30</ProcessorTime>
+  <Parameters>
+    <Key>PremultiplyAlpha</Key>
+    <Value>True</Value>
+  </Parameters>
+  <Parameters>
+    <Key>TextureFormat</Key>
+    <Value>Compressed</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput />
+</PipelineBuildEvent>

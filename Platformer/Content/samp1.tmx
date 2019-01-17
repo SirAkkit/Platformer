@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.1.4" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="64" tileheight="64" infinite="0" nextobjectid="1">
+<map version="1.2" tiledversion="1.2.1" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="64" tileheight="64" infinite="0" nextlayerid="7" nextobjectid="7">
  <tileset firstgid="1" name="Tileset" tilewidth="64" tileheight="64" tilecount="72" columns="8">
   <image source="Tileset.png" width="512" height="576"/>
  </tileset>
- <layer name="Collisions" width="20" height="20">
+ <layer id="1" name="Collisions" width="20" height="20">
   <data encoding="base64" compression="zlib">
    eJxjYBgFpAI5KpunNmoeBrAEYjsqmofPHis0uwZ7+Omh8WF+wIYJhSE2/+MDKsQ7kyh7SXHrYAJcQMyNBZMLhIBYGgumtnm40gkhbAPE2lgwADaxDDg=
   </data>
  </layer>
+ <objectgroup color="#ff0000" id="4" name="Enemies">
+  <object id="1" x="544" y="1123"/>
+  <object id="2" x="95" y="676"/>
+ </objectgroup>
+ <objectgroup color="#ffff00" id="5" name="Loot">
+  <object id="3" x="1248" y="996"/>
+  <object id="4" x="605" y="868"/>
+  <object id="5" x="863" y="555"/>
+ </objectgroup>
+ <objectgroup color="#0000ff" id="6" name="Goal">
+  <object id="6" x="1060" y="738"/>
+ </objectgroup>
 </map>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SourceFile>C:/Users/theak/OneDrive/School/AIE/Projects/Games/Platformer/Platformer/Content/SFX/Jump.wav</SourceFile>
+  <SourceTime>2019-01-09T12:18:53.1386632+10:30</SourceTime>
+  <DestFile>C:/Users/theak/OneDrive/School/AIE/Projects/Games/Platformer/Platformer/Content/bin/Windows/SFX/Jump.xnb</DestFile>
+  <DestTime>2019-01-12T09:46:43.5698209+10:30</DestTime>
+  <Importer>WavImporter</Importer>
+  <ImporterTime>2018-12-09T03:05:54+10:30</ImporterTime>
+  <Processor>SoundEffectProcessor</Processor>
+  <ProcessorTime>2018-12-09T03:05:54+10:30</ProcessorTime>
+  <Parameters>
+    <Key>Quality</Key>
+    <Value>Best</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput />
+</PipelineBuildEvent>

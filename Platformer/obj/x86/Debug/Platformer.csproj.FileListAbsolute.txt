@@ -97,3 +97,16 @@ C:\Users\theak\OneDrive\School\AIE\Projects\Games\Platformer\Platformer\obj\x86\
 C:\Users\theak\OneDrive\School\AIE\Projects\Games\Platformer\Platformer\bin\Windows\x86\Debug\Content\Fantasy Tileset.xnb
 C:\Users\theak\OneDrive\School\AIE\Projects\Games\Platformer\Platformer\bin\Windows\x86\Debug\Content\samp1.xnb
 C:\Users\theak\OneDrive\School\AIE\Projects\Games\Platformer\Platformer\bin\Windows\x86\Debug\Content\Tileset.xnb
+C:\Users\theak\OneDrive\School\AIE\Projects\Games\Platformer\Platformer\bin\Windows\x86\Debug\Content\player_jump.xnb
+C:\Users\theak\OneDrive\School\AIE\Projects\Games\Platformer\Platformer\bin\Windows\x86\Debug\Content\player_walk1.xnb
+C:\Users\theak\OneDrive\School\AIE\Projects\Games\Platformer\Platformer\bin\Windows\x86\Debug\Content\Candara.xnb
+C:\Users\theak\OneDrive\School\AIE\Projects\Games\Platformer\Platformer\bin\Windows\x86\Debug\Content\heart.xnb
+C:\Users\theak\OneDrive\School\AIE\Projects\Games\Platformer\Platformer\bin\Windows\x86\Debug\Content\SFX\Jump.xnb
+C:\Users\theak\OneDrive\School\AIE\Projects\Games\Platformer\Platformer\bin\Windows\x86\Debug\Content\Music\SuperHero_original.wma
+C:\Users\theak\OneDrive\School\AIE\Projects\Games\Platformer\Platformer\bin\Windows\x86\Debug\Content\Music\SuperHero_original.xnb
+C:\Users\theak\OneDrive\School\AIE\Projects\Games\Platformer\Platformer\bin\Windows\x86\Debug\Content\Music\SuperHero_original_no_Intro.wma
+C:\Users\theak\OneDrive\School\AIE\Projects\Games\Platformer\Platformer\bin\Windows\x86\Debug\Content\Music\SuperHero_original_no_Intro.xnb
+C:\Users\theak\OneDrive\School\AIE\Projects\Games\Platformer\Platformer\bin\Windows\x86\Debug\Content\Music\Superhero_violin.wma
+C:\Users\theak\OneDrive\School\AIE\Projects\Games\Platformer\Platformer\bin\Windows\x86\Debug\Content\Music\Superhero_violin.xnb
+C:\Users\theak\OneDrive\School\AIE\Projects\Games\Platformer\Platformer\bin\Windows\x86\Debug\Content\Music\Superhero_violin_no_intro.wma
+C:\Users\theak\OneDrive\School\AIE\Projects\Games\Platformer\Platformer\bin\Windows\x86\Debug\Content\Music\Superhero_violin_no_intro.xnb

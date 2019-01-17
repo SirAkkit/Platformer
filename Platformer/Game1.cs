@@ -1,11 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Media;
 using MonoGame.Extended;
 using MonoGame.Extended.Tiled;
 using MonoGame.Extended.Tiled.Graphics;
 using MonoGame.Extended.ViewportAdapters;
 using System;
+using System.Collections.Generic;
 
 
 
@@ -16,6 +18,10 @@ namespace Platformer
     /// </summary>
     public class Game1 : Game
     {
+        SpriteFont candaraFont;
+        int score = 0;
+        int lives = 3;
+        Texture2D heart = null;
         public static int tile = 64;
         public static float meter = tile;
         public static float gravity = meter * 9.8f * 6.0f;
@@ -23,7 +29,10 @@ namespace Platformer
         public static float acceleration = maxVelocity.X * 2;
         public static float friction = maxVelocity.X * 6;
         public static float jumpImpulse = meter * 1500;
+        Song gameMusic;
 
+        List<Enemy> enemies = new List<Enemy>();
+        Sprite gem = null;
 
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
@@ -71,6 +80,7 @@ namespace Platformer
         {
             // TODO: Add your initialization logic here
             player = new Player(this);
+            player.Position = new Vector2(100, 1100);
             base.Initialize();
         }
 
@@ -84,6 +94,8 @@ namespace Platformer
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             player.Load(Content);
+            candaraFont = Content.Load<SpriteFont>("Candara");
+            heart = Content.Load<Texture2D>("heart");
 
             BoxingViewportAdapter viewportAdapter = new BoxingViewportAdapter(Window,
             GraphicsDevice,
@@ -91,6 +103,10 @@ namespace Platformer
             camera = new Camera2D(viewportAdapter);
             camera.Position = new Vector2(0, ScreenHeight);
 
+            gameMusic = Content.Load<Song>("Music/SuperHero_original_no_Intro");
+            MediaPlayer.Volume = 0.1f;
+            MediaPlayer.Play(gameMusic);
+          
             map = Content.Load<TiledMap>("samp1");
             mapRenderer = new TiledMapRenderer(GraphicsDevice);
 
@@ -101,6 +117,34 @@ namespace Platformer
                 }
             }
 
+            foreach (TiledMapObjectLayer layer in map.ObjectLayers)
+            {
+                if(layer.Name == "Enemies")
+                {
+                    foreach (TiledMapObject obj in layer.Objects)
+                    {
+                        Enemy enemy = new Enemy(this);
+                        enemy.Load(Content);
+                        enemy.Position = new Vector2(obj.Position.X, obj.Position.Y);
+                        enemies.Add(enemy);
+                    }
+                }
+
+                if (layer.Name == "Loot")
+                {
+                    TiledMapObject obj = layer.Objects[0];
+                    if (obj != null)
+                    {
+                        AnimatedTexture anim = new AnimatedTexture(Vector2.Zero, 0, 1, 1);
+                        anim.Load(Content, "gem_3", 1, 1);
+                        gem = new Sprite();
+                        gem.Add(anim, 0, 5);
+                        gem.position = new Vector2(obj.Position.X, obj.Position.Y);
+                    }
+                }
+            }
+
+           
             // TODO: use this.Content to load your game content here
         }
 
@@ -124,6 +168,11 @@ namespace Platformer
 
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
+
+            foreach (Enemy e in enemies)
+            {
+                e.Update(deltaTime);
+            }
 
             if (Keyboard.GetState().IsKeyDown(Keys.Up))
             {
@@ -201,6 +250,22 @@ namespace Platformer
 
             mapRenderer.Draw(map, ref viewMatrix, ref projectionMatrix);
             player.Draw(spriteBatch);
+
+            foreach (Enemy e in enemies)
+            {
+                e.Draw(spriteBatch);
+            }
+
+            spriteBatch.End();
+
+            spriteBatch.Begin();
+
+            spriteBatch.DrawString(candaraFont, "Score " + score.ToString(), new Vector2(20, 20), Color.Brown);
+            for (int i = 0; i < lives; i++)
+           {
+               spriteBatch.Draw(heart, new Vector2(ScreenWidth - 60 - i * 40, 40), Color.White);
+           }
+
             spriteBatch.End();
 
             base.Draw(gameTime);

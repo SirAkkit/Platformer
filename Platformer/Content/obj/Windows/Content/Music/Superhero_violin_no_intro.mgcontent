@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SourceFile>C:/Users/theak/OneDrive/School/AIE/Projects/Games/Platformer/Platformer/Content/Music/Superhero_violin_no_intro.ogg</SourceFile>
+  <SourceTime>2019-01-09T12:18:53.1147262+10:30</SourceTime>
+  <DestFile>C:/Users/theak/OneDrive/School/AIE/Projects/Games/Platformer/Platformer/Content/bin/Windows/Content/Music/Superhero_violin_no_intro.xnb</DestFile>
+  <DestTime>2019-01-09T12:29:55.2509964+10:30</DestTime>
+  <Importer>OggImporter</Importer>
+  <ImporterTime>2018-12-09T03:05:54+10:30</ImporterTime>
+  <Processor>SongProcessor</Processor>
+  <ProcessorTime>2018-12-09T03:05:54+10:30</ProcessorTime>
+  <Parameters>
+    <Key>Quality</Key>
+    <Value>Best</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput>
+    <string>C:/Users/theak/OneDrive/School/AIE/Projects/Games/Platformer/Platformer/Content/bin/Windows/Content/Music/Superhero_violin_no_intro.wma</string>
+  </BuildOutput>
+</PipelineBuildEvent>
