@@ -194,7 +194,7 @@ namespace Platformer
                 camera.Move(new Vector2(+50, 0) * deltaTime);
             }
 
-
+            checkCollisions();
             player.Update(deltaTime);
             camera.Position = player.Position - new Vector2(ScreenWidth / 2, ScreenHeight / 2);
             // TODO: Add your update logic here
@@ -233,7 +233,47 @@ namespace Platformer
             return tile.Value.GlobalIdentifier;
         }
 
+        private void checkCollisions()
+        {
+            foreach (Enemy e in enemies)
+            {
+                if (IsColliding(player.Bounds, e.Bounds) == true)
+                {
+                if (player.IsJumping && player.Velocity.Y > 0)
+                    {
+                        player.JumpOnCollision();
+                        enemies.Remove(e);
+                        break;
+                    }
+                    else
+                    {
+                        //player just died
+                    }
+                }
+            }
+        }
 
+
+        private bool IsColliding(Rectangle rect1, Rectangle rect2)
+        {
+            if (rect1.X + rect1.Width < rect2.X)
+            {
+                return false;
+            }
+            else if(rect1.X > rect2.X + rect2.Width)
+            {
+                return false;
+            }
+            else if (rect1.Y + rect1.Height < rect2.Y)
+            {
+                return false;
+            }
+            //else if (rect1.Y + rect2.Height)
+            //{
+             //   return false;
+            //}
+            return true;
+        }
         /// This is called when the game should draw itself.
         /// </summary>
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
@@ -255,6 +295,7 @@ namespace Platformer
             {
                 e.Draw(spriteBatch);
             }
+            gem.Draw(spriteBatch);
 
             spriteBatch.End();
 

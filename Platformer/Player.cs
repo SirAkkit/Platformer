@@ -19,10 +19,29 @@ namespace Platformer
         Game1 game = null;
         bool isFalling = true;
         bool isJumping = false;
-
+        bool autoJump = true;
         Vector2 velocity = Vector2.Zero;
         public Vector2 position = Vector2.Zero;
 
+        public Vector2 Velocity
+        {
+            get { return velocity; }
+        }
+
+        public Rectangle Bounds
+        {
+            get { return sprite.Bounds; }
+        }
+
+        public bool IsJumping
+        {
+            get { return IsJumping; }
+        }
+
+        public void JumpOnCollision()
+        {
+            autoJump = true;
+        }
 
         public Vector2 Position
         {
@@ -100,8 +119,9 @@ namespace Platformer
                 sprite.SetFlipped(false);
                 sprite.Play();
             }
-            if (Keyboard.GetState().IsKeyDown(Keys.Up) == true && this.isJumping == false && falling == false)
+            if (Keyboard.GetState().IsKeyDown(Keys.Up) == true && this.isJumping == false && falling == false || autoJump == true)
             {
+                autoJump = false;
                 acceleration.Y -= Game1.jumpImpulse;
                 this.isJumping = true;
                 jumpSoundInstance.Play();
@@ -170,5 +190,8 @@ namespace Platformer
             }
             this.isFalling = !(celldown || (nx && celldiag));
         }
+
+        
+
     }
 }

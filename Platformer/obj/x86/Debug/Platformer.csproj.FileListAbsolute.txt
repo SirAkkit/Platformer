@@ -110,3 +110,5 @@ C:\Users\theak\OneDrive\School\AIE\Projects\Games\Platformer\Platformer\bin\Wind
 C:\Users\theak\OneDrive\School\AIE\Projects\Games\Platformer\Platformer\bin\Windows\x86\Debug\Content\Music\Superhero_violin.xnb
 C:\Users\theak\OneDrive\School\AIE\Projects\Games\Platformer\Platformer\bin\Windows\x86\Debug\Content\Music\Superhero_violin_no_intro.wma
 C:\Users\theak\OneDrive\School\AIE\Projects\Games\Platformer\Platformer\bin\Windows\x86\Debug\Content\Music\Superhero_violin_no_intro.xnb
+C:\Users\theak\OneDrive\School\AIE\Projects\Games\Platformer\Platformer\bin\Windows\x86\Debug\Content\gem_3.xnb
+C:\Users\theak\OneDrive\School\AIE\Projects\Games\Platformer\Platformer\bin\Windows\x86\Debug\Content\zombie_idle.xnb

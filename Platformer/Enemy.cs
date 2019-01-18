@@ -30,8 +30,8 @@ namespace Platformer
 
         public Vector2 Position
         {
-            get { return position; }
-            set { position = value; }
+            get { return sprite.position; }
+            set { sprite.position = value; }
         }
 
         public Rectangle Bounds
@@ -101,10 +101,11 @@ namespace Platformer
                         this.moveRight = true;
                         this.pause = 0.5f;
                     }
+                   
                 }
-
                 Position = new Vector2((float)Math.Floor(Position.X + (deltaTime * velocity.X)), Position.Y);
                 velocity.X = MathHelper.Clamp(velocity.X + (deltaTime * ddx), -zombieMaxVelocity.X, zombieMaxVelocity.X);
+
             }
         }
 
